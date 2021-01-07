@@ -47,7 +47,7 @@ def main():
 	zero_list=(0,0,0,0,0,0,0,0,0,0)
 	test_df=pd.DataFrame([zero_list],columns=['Pclass_1','Pclass_2','Pclass_3','Fare','Sex','Age','SibSp','Parch','Child','Mother'])
 
-	#pclass/fare,pclass=1&2&3最便宜票價(換算)=£2100 & £1900 & £600，資料中平均票價為£84/£21/£14
+	#pclass/fare,pclass=1&2&3  £2100 & £1900 & £600，£84/£21/£14
 	fare_option=st.selectbox(' Welcome to Titanic ! Choose your class and start journey. ',
 	('Economy Class-£600','Bussiness Class-£1900','First Class-£2100'))
 
