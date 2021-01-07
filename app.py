@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import numpy as np 
@@ -5,27 +6,30 @@ import time
 import module.titanic as modu
 from PIL import Image
 from sklearn.preprocessing import StandardScaler
+st.set_page_config(
+	page_title="Survivor Classificator",
+	page_icon="🧊",
+    #layout="wide",
+ 	#initial_sidebar_state="expanded",
+)
 
-st.set_page_config(page_title='Survivor Classificator',page_icon='💀')
 hide_footer_style = """
 <style>
 .reportview-container .main footer {visibility: hidden;}    
 """
 st.markdown(hide_footer_style, unsafe_allow_html=True)
 
+@st.cache
 def show_footer():
 	st.markdown("***")
 	st.markdown("**© 2021 Developed by Daniele Grotti **") 
 	st.markdown("**Like this tool?** Follow me on  "
 				"[Linkedin](https://www.linkedin.com/in/daniele-grotti-38681146)")
 
-
-#streamlit
-st.title("Titanic Survivor Classificator")
-
-
 def main():
-	# ################ css background #########################
+	#streamlit
+	st.title("Titanic Survivor Classificator")
+################ css background #########################
 	with open("style.css") as f:
 		st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 	# Add a placeholder
