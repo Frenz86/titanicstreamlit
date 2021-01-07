@@ -19,7 +19,6 @@ hide_footer_style = """
 """
 st.markdown(hide_footer_style, unsafe_allow_html=True)
 
-@st.cache
 def show_footer():
 	st.markdown("***")
 	st.markdown("**© 2021 Developed by Daniele Grotti **") 
