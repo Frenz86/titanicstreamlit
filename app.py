@@ -5,12 +5,12 @@ import time
 import module.titanic as modu
 from PIL import Image
 from sklearn.preprocessing import StandardScaler
-st.set_page_config(
-	page_title="Survivor Classificator",
+#st.set_page_config(
+	#page_title="Survivor Classificator",
 	#page_icon="🧊",
     #layout="wide",
  	#initial_sidebar_state="expanded",
-)
+#)
 
 hide_footer_style = """
 <style>
