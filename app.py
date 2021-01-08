@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import numpy as np 
@@ -8,7 +7,7 @@ from PIL import Image
 from sklearn.preprocessing import StandardScaler
 st.set_page_config(
 	page_title="Survivor Classificator",
-	page_icon="🧊",
+	#page_icon="🧊",
     #layout="wide",
  	#initial_sidebar_state="expanded",
 )
